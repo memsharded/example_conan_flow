@@ -4,9 +4,6 @@ from conans import ConanFile, CMake, tools
 class HelloConan(ConanFile):
     name = "Hello"
     version = "0.1"
-    license = "<Put the package license here>"
-    url = "<Package recipe repository url here, for issues about the package>"
-    description = "<Description of Hello here>"
     settings = "os", "compiler", "build_type", "arch", "os_build", "arch_build"
     generators = "cmake"
 
