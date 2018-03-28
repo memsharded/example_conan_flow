@@ -1,10 +1,14 @@
-from conans import ConanFile, CMake, tools
+from conans import ConanFile, CMake
 
 
 class HelloConan(ConanFile):
     name = "Hello"
-    version = "0.1"
-    settings = "os", "compiler", "build_type", "arch", "os_build", "arch_build"
+    version = "1.1"
+    description = "Example of Conan Package Flow 1.1"
+    license = "MIT"
+    url = "https://bincrafters.github.io"
+    #TBD settings = "os", "compiler", "build_type", "arch", "os_build", "arch_build"
+    settings = "os", "arch", "compiler", "build_type"
     generators = "cmake"
 
     def source(self):

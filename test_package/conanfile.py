@@ -1,8 +1,10 @@
 from conans import ConanFile, CMake, tools
 import os
 
+
 class HelloTestConan(ConanFile):
-    settings = "os", "compiler", "build_type", "arch", "os_build", "arch_build"
+    # TBD settings = "os", "compiler", "build_type", "arch", "os_build", "arch_build"
+    settings = "os", "arch", "compiler", "build_type"
     generators = "cmake"
 
     def build(self):
